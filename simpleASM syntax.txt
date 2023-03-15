@@ -36,8 +36,29 @@ POP : arguments(DESTINATION) #pops a value from the stack
 PEEK : arguments(POSITION , DESTINATION) #gets a value from the stack based off the POSITION
 
 other:
-IF : arguments(A , COMPARISON , B)
-THEN arguments(none)
-ELSE arguments(none)
-RUN arguments(FUNCTION)
-END 
+IF : arguments(A , COMPARISON , B) #compares two values and if it returns true it will jump to the nearest THEN control word
+THEN : arguments(none) #will be jumped to by a IF if it returns TRUE
+ELSE : arguments(none) #will be jumped to by a IF if it returns FASLE
+RUN : arguments(FUNCTION) #runs a fucntion 
+END : arguments(none) #states the end of a fucntion
+GOTO : arguments(LABEL) #a unconditional jump 
+
+SYNTAX:
+
+comparisons:
+= : #A equal to B
+> : #A greater than B
+< : #A less than B
+>= : #A greater than or equal to B (also the same as inverted less than )
+<= : #A less than or equal to B (also the same as inverted greater than )
+>< : #A less than or greater than B (also the same as inverted equal to)
+TRUE : #returns true no matter A or B
+FASLE : #returns flase no matter A or B
+LABEL : (@ , NAME) #a label for a GOTO to jump to
+
+USAGE/EXSAMPLES:
+
+
+
+
+
