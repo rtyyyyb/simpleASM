@@ -1,7 +1,7 @@
 
 CONTROL WORDS:
 
-arethmetic:
+arithmetic:
 ADD : arguments(A , B , RESULT) #adds A to B and puts the result in RESULT
 SUB : arguments(A , B , RESULT) #subtracts B from A and puts the result in RESULT
 MULT : arguments(A , B , RESULT) #multiplys A to B and puts the result in RESULT
