@@ -1,1 +1,2 @@
 # simpleASM 
+simpleASM is a assembly like programming language that i am developing to be much simpler and easy to code than assembly language for people who dont know ASM too well but stull want to program cpus on a low level. i will write a customisable compiler for it that will need you to add translations for different operations like JMP, ADD, LOD etc but the actual syntax for simpleASM won't just be the translations that the compiler needs
