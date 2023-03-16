@@ -74,9 +74,20 @@ LABEL : (@ , NAME) #a label for a GOTO to jump to
 ## compiler info
 ### general info
 ### specifications
-core reqirements:
-(register 0 must always return 0)
+headers:
 ```
+BITS : #returns the number of bits your cpu is
+MAX : #returns the maximum posible value your can can have (unsigned) 
+MAXCALL : #returns how deep the call stack is
+MAXDATA : #returns how deep the data stack is
+```
+core reqirements:
+```
+(register 0 must always return 0)
+(no immediates for instuctions that arent IMM)
+BITS
+MAXCALL
+MAXDATA 
 ADD 
 NOR
 LOAD
@@ -84,11 +95,10 @@ STORE
 JUMP IF GREATER 
 IMM
 RIGHT SHIFT 
-(no immediates for instuctions that arent IMM)
 ```
 basic reqirements:
-(register 0 must always return 0)
 ```
+(register 0 must always return 0)
 (all of core)
 AND
 OR
