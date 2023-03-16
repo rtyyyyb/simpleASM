@@ -9,15 +9,19 @@ SUB : arguments(A , B , RESULT) #subtracts B from A and puts the result in RESUL
 MULT : arguments(A , B , RESULT) #multiplys A to B and puts the result in RESULT
 DIV : arguments(A ,B , R ESULT) #divides A from B and puts the result in RESULT
 MOD : arguments(A , B , RESULT) #does A modulus B and puts the result in RESULT
+INC : arguments(A , RESULT) #increments A by 1 and puts the result in RESULT 
+DEC : arguments(A , RESULT) #decrements A by 1 and puts the result in RESULT  
 ```
 ```
-logic:
+bitwise logic:
 AND : arguments(A , B , RESULT) #does bitwise AND to A and B and puts the result in RESULT
 OR : arguments(A , B , RESULT) #does bitwise OR to A and B and puts the result in RESULT
 XOR : arguments(A , B , RESULT) #does bitwise XOR to A and B and puts the result in RESULT
 NAND : arguments(A , B , RESULT) #does bitwise NAND to A and B and puts the result in RESULT
 NOR : arguments(A , B , RESULT) #does bitwise NOR to A and B and puts the result in RESULT
 XNOR : arguments(A , B , RESULT) #does bitwise XNOR to A and B and puts the result in RESULT
+RSHF : arguments(A , AMOUNT , RESULT) # binarily right shifts by AMOUNT bits and puts the result in RESULT
+LSHF : arguments(A , AMOUNT , RESULT) # binarily left shifts by AMOUNT bits and puts the result in RESULT
 ```
 ```
 data management:
@@ -67,3 +71,36 @@ TRUE : #returns true no matter A or B
 FASLE : #returns flase no matter A or B
 LABEL : (@ , NAME) #a label for a GOTO to jump to
 ```
+## compiler info
+### general info
+### specifications
+core reqirements:
+(register 0 must always return 0)
+```
+ADD 
+NOR
+LOAD
+STORE
+JUMP IF GREATER 
+IMM
+RIGHT SHIFT 
+(no immediates for instuctions that arent IMM)
+```
+basic reqirements:
+(register 0 must always return 0)
+```
+(all of core)
+AND
+OR
+XOR
+SUB
+JUMP IF LESS
+JUMP IF EQUAL 
+```
+
+
+
+
+
+
+
