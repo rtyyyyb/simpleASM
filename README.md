@@ -60,6 +60,9 @@ comparisons:
 >= : #A greater than or equal to B (also the same as inverted less than )
 <= : #A less than or equal to B (also the same as inverted greater than )
 >< : #A less than or greater than B (also the same as inverted equal to)
+```
+```
+other:
 TRUE : #returns true no matter A or B
 FASLE : #returns flase no matter A or B
 LABEL : (@ , NAME) #a label for a GOTO to jump to
