@@ -2,7 +2,7 @@
 simpleASM is a assembly like programming language that i am developing to be much simpler and easy to code than assembly language for people who dont know ASM too well but stull want to program cpus on a low level. i will write a customisable compiler for it that will need you to add translations for different operations like JMP, ADD, LOD etc but the actual syntax for simpleASM won't just be the translations that the compiler needs
 ## main syntax
 ```
-CONTROL WORDS:
+### contol words:
 
 arithmetic:
 ADD : arguments(A , B , RESULT) #adds A to B and puts the result in RESULT
@@ -46,7 +46,7 @@ RUN : arguments(FUNCTION) #runs a fucntion
 END : arguments(none) #states the end of a fucntion
 GOTO : arguments(LABEL) #a unconditional jump 
 
-SYNTAX:
+## syntax:
 
 comparisons:
 = : #A equal to B
