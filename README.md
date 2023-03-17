@@ -73,7 +73,7 @@ LABEL : (@ , NAME) #a label for a GOTO to jump to
 ```
 ## compiler info
 ### general info
-the main simpelASM compiler will be made custommizable so that you dont have to write a whole simpleASM compiler just for a diffrent cpu ISA or assembly language. in this repo tere will be a "core.txt", "basic.txt" and a "advanced.txt" text file which will be where the compiler will get the translations to compile the simpleASM to. 
+the main simpleASM compiler will be made custommizable so that you dont have to write a whole simpleASM compiler just for a diffrent cpu ISA or assembly language. in this repo tere will be a "core.txt", "basic.txt" and a "advanced.txt" text file which will be where the compiler will get the translations to compile the simpleASM to. 
 ### specifications
 headers:
 ```
