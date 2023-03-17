@@ -84,7 +84,6 @@ MAXDATA : #returns how deep the data stack is
 core reqirements:
 ```
 (register 0 must always return 0)
-(no immediates for instuctions that arent IMM)
 BITS
 MAXCALL
 MAXDATA 
@@ -99,6 +98,7 @@ RIGHT SHIFT
 basic reqirements:
 ```
 (register 0 must always return 0)
+(immediates are used in instuctions that arent IMM)
 (all of core)
 AND
 OR
