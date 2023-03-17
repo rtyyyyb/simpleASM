@@ -1,7 +1,0 @@
-BITS : 16
-
-MAXCALL : 32
-
-MAXDATA : 128
-
-ADD(A,B,RETURN) :
