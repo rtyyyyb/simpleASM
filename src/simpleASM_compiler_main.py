@@ -1,16 +1,15 @@
-def core(translations):
-    print(f"core translations: {translations}")
+from core_compiler import core_compile
 
-def basic(translations):
+def basic_compiler_start(translations):
     print(f"basic translations: {translations}")
 
-def advanced(translations):
+def advanced_compiler_start(translations):
     print(f"advanced translations: {translations}")
 
 types = {
-    "core": {"filename": "core_translations.txt", "function": core},
-    "basic": {"filename": "basic_translations.txt", "function": basic},
-    "advanced": {"filename": "advanced_translations.txt", "function": advanced},
+    "core": {"filename": "core_translations.txt", "function": core_compile},
+    "basic": {"filename": "basic_translations.txt", "function": basic_compiler_start},
+    "advanced": {"filename": "advanced_translations.txt", "function": advanced_compiler_start},
 }
 
 def get_translation_level():
@@ -24,7 +23,7 @@ def get_translation_level():
     return type.lower()
 
 def start_compiler_type(type):
-    with open(f"src\\translations\\{types[type]['filename']}", "r") as file:
+    with open(f"translations\\{types[type]['filename']}", "r") as file:
         translations = file.readlines()
         types[type]["function"](translations)
 
